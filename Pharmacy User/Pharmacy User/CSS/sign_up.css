@@ -1,0 +1,38 @@
+body {
+    max-width: 100%;
+    margin: auto;
+    background-color: rgb(169, 211, 237);
+    /* background-image: linear-gradient(rgba(0, 0, 78, 0.856),rgba(3, 1, 76, 0.897)),url("images/promo.jpg"); */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display:block;
+    /* font-family: century gothic; */
+  }
+
+  /* .text-box h1{
+    text-align: center;
+    font-size: 800%;
+    margin: 0 2% ;
+    color: rgb(12, 2, 47);
+    font-weight: bold;
+    
+} */
+
+
+
+
+#fp {
+    background-color: rgb(169, 211, 237);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#fimg{
+    padding-top: 2%;
+    padding-right: 2%;
+}

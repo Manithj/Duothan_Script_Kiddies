@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Plugin/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <script src="Plugin/jquery.min.js"></script>
+    <script src="Plugin/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/newsignup.css">
+    <link rel="icon" href="Images/logo.png" type="image/png">
+    <title>Pharmacy Dashboard Sign Up</title>
+</head>
+<body>
+
+    
+<div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12">
+        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                <div class="p-5">
+                  <h3 class="fw-normal mb-5" style="color: rgb(4, 1, 37);"><b>Sign up</b></h3>
+                           
+                        <form action="sign_in.php" method="POST" autocomplete="off">
+
+                        
+                        <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+
+                      <div class="form-outline">
+                      <label for="">Pharmacy Name</label>
+                              <input type="text" name="pname" id="pname" class="form-control" placeholder="" aria-describedby="helpId">
+                              <small id="helpId" class="text-muted">Enter pharmacy name.</small>
+                            
+                      </div>
+
+                    </div>
+                    
+                  </div>
+
+               
+
+                  <div class="mb-4 pb-2">
+                    <div class="form-outline">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">Enter Email.</small>
+                  </div>
+                  </div>
+
+                  <div class="mb-4 pb-2">
+                    <div class="form-outline">
+                    <label for="">Address</label>
+                    <input type="text" name="address" id="address" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">Enter address.</small>
+                  </div>
+                  </div>
+
+                  <div class="mb-4 pb-2">
+                    <div class="form-outline">
+                    <label for="">Phone Number</label>
+                    <input type="text" name="phoneNum" id="phoneNum" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">Enter phone number.</small>
+                  </div>
+                  </div>
+
+                  <div class="mb-4 pb-2">
+                    <div class="form-outline">
+                    <label for="">Pharmacy licence Number</label>
+                    <input type="text" name="licenceNum" id="licenceNum" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">Enter pharmacy licence number.</small>
+                  </div>
+                  </div>
+
+                  <div class="mb-4 pb-2">
+                    <div class="form-outline">
+                    <label for="">Password</label>
+                    <input type="password" name="pswd" id="pswd" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">Create your own password.</small>
+                  </div>
+                  </div>
+
+                  <div class="mb-4 pb-2">
+                    <div class="form-outline">
+                    <label for="">Confirm Password</label>
+                    <input type="password" name="pswd" id="pswd" class="form-control" placeholder="" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted">Confirm your password.</small>
+                  </div>
+                  </div>
+
+
+                  <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                    <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />
+                    <label class="form-check-label text-red" for="form2Example3">
+                      I do accept the <a href="#!" class="text-red"><u>Terms of Services</u></a> and <a href="#!" class="text-red"><u>Privacy Policy.</u></a>
+                    </label>
+                  </div>
+
+                  <button type="submit" name="submit" id="submit" class="btn btn-info"
+                    data-mdb-ripple-color="dark">Sign Up</button>
+                    
+
+                    <p class="text-center text-muted mt-5 mb-0"> <a href="sign_in.html"
+                      >Already have an account?</a></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function signup() {
+    var pharName = document.getElementById("pname").value;
+    var pEmail = document.getElementById("email").value;
+    var pAddress = document.getElementById("address").value;
+    var phoneNum = document.getElementById("phoneNum").value;
+    var licenceNum = document.getElementById("licenceNum").value;
+    var pswd = document.getElementById("pswd").value;
+    var cpswd = document.getElementById("cpswd").value;
+    var checkAgree = document.getElementById("form2Example3c").value;
+    
+    
+    if (pharName.trim() === "" || 
+        pEmail.trim() === "" || 
+        pAddress.trim() === "" || 
+        phoneNum.trim() === "" || 
+        licenceNum.trim() === "" || 
+        pswd.trim() === "" || 
+        cpswd.trim() === "" ||
+        checkAgree !== "on") {
+        alert("Please fill in all required fields and agree to the terms and conditions.");
+        return;
+    }
+    
+    
+    var emailRegex = /\S+@\S+\.\S+/;
+    if (!emailRegex.test(pEmail)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+    
+    
+    if (pswd.length < 8) {
+        alert("Password must be at least 8 characters long.");
+        return;
+    }
+    
+    
+    if (pswd !== cpswd) {
+        alert("Passwords do not match.");
+        return;
+    }
+
+    var data = "pharName=" + encodeURIComponent(pharName) +
+               "&pEmail=" + encodeURIComponent(pEmail) +
+               "&pAddress=" + encodeURIComponent(pAddress) +
+               "&phoneNum=" + encodeURIComponent(phoneNum) +
+               "&licenceNum=" + encodeURIComponent(licenceNum) +
+               "&pswd=" + encodeURIComponent(pswd) +
+               "&cpswd=" + encodeURIComponent(cpswd) +
+               "&checkAgree=" + encodeURIComponent(checkAgree);
+
+    var httpr = new XMLHttpRequest();
+    httpr.open("POST", "./aj_f/sign_up.php", true);
+    httpr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    httpr.onreadystatechange = function() {
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+           
+        } else {
+            
+        }
+    };
+    httpr.send(data);
+}
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
