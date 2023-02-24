@@ -13,4 +13,4 @@ Duothan competition official repository by team Script Kiddies
 - Repos link: https://github.com/Manithj/Duothan_Script_Kiddies
 - Submission Technology Stacks/Frameworks: @BootStrap @MySQL
 
-- Work-thru Video link: 
+- Work-thru Video link: https://drive.google.com/file/d/1HyWENCjvxN0tPgga2_gYxn5geP_o_WL2/view?usp=sharing
