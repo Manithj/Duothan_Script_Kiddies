@@ -9,3 +9,7 @@ Duothan competition official repository by team Script Kiddies
 - [Ramith Gunawardana] (https://github.com/Ramith-Gunawardana)
 - [Dinithi Amarasinghe] (https://github.com/DinaKaush)
 - [Gayashani Divyanjalee] (https://github.com/Gayashani00)
+
+-Repos link: https://github.com/Manithj/Duothan_Script_Kiddies
+-Submission Technology Stacks/Frameworks: @BootStrap @MySQL
+-Work-thru Video link: 
