@@ -5,7 +5,7 @@ Duothan competition official repository by team Script Kiddies
 - Team Script_Kiddies (Team 02)
 - General Sir John Kotelawala Defence University
 
-- Manith Marapperuma 
-- Ramith Gunawardana
-- Dinithi Amarasinghe
-- Gayashani Divyanjalee
+- [Manith Marapperuma] (https://github.com/Manithj)
+- [Ramith Gunawardana] (https://github.com/Ramith-Gunawardana)
+- [Dinithi Amarasinghe] (https://github.com/DinaKaush)
+- [Gayashani Divyanjalee] (https://github.com/Gayashani00)
