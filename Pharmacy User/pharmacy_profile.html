@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Plugin/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <script src="Plugin/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="Plugin/bootstrap.min.js"></script>
+    <script src="JS\date.js"></script>
+    <link rel="stylesheet" href="CSS/pharmacy_profile.css">
+    <link rel="icon" href="Images/logo.png" type="image/png">
+    <title>Pharmacy Profile</title>
+</head>
+<body>
+
+    
+<div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12">
+        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                <div class="p-5">
+                  <h1 class="fw-normal mb-5" style="color: rgb(4, 1, 37);">Pharmacy Information</h1>
+                           
+                        <form action="sign_in.php" method="POST" autocomplete="off">
+
+  
+                          <div class="row">
+                            <div class="col-md-6 mb-4 pb-2">
+                                <div class="form-outline">
+                                <label for="">Pharmacy's Name</label>
+                                        <input type="text" name="pname" id="pname" class="form-control" placeholder="sample pharmacy" aria-describedby="helpId">
+                                        <small id="helpId" class="text-muted"></small>
+                                </div>
+                              </div>
+
+                            <div class="col-md-6 mb-4 pb-2">
+        
+                              <div class="form-outline">
+                              <label for="">Address</label>
+                                      <input type="text" name="paddress" id="paddress" class="form-control" placeholder="sample pharmacy address " aria-describedby="helpId">
+                                      <small id="helpId" class="text-muted"></small>
+                                </div>
+                            </div>
+                          </div>
+        
+             <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+
+                      <div class="form-outline">
+                      <label for="">Phone Number</label>
+                              <input type="number" name="pnumber" id="pnumber" class="form-control" placeholder="0123456789" aria-describedby="helpId">
+                              <small id="helpId" class="text-muted"></small>
+                            
+                      </div>
+
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+
+                      <div class="form-outline">
+                      <label for="">Email</label>
+                              <input type="text" name="pemail" id="pemail" class="form-control" placeholder="sample@samplepharmacy.com" aria-describedby="helpId">
+                              <small id="helpId" class="text-muted"></small>
+                           
+                      </div>
+
+                    </div>
+                  </div>
+
+                 
+             <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                  <label for="">Website</label>
+                          <input type="number" name="pwebsite" id="pwebsite" class="form-control" placeholder="www.samplepharmacy.com" aria-describedby="helpId">
+                          <small id="helpId" class="text-muted"></small>
+                        
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                  <label for="">Operating Hours</label>
+                          <input type="text" name="poh" id="poh" class="form-control" placeholder="9.00am - 8.00pm" aria-describedby="helpId">
+                          <small id="helpId" class="text-muted"></small>
+                       
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                  <label for="">Pharmacy License</label>
+                          <input type="number" name="plicense" id="plicense" class="form-control" placeholder="www.samplepharmacy.com" aria-describedby="helpId">
+                          <small id="helpId" class="text-muted"></small>
+                        
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="p-5">
+                <h1 class="fw-normal mb-5" style="color: rgb(4, 1, 37);">Owner Information</h1>
+                         
+                      <form action="" method="POST" autocomplete="off">
+
+           <div class="row">
+                  <div class="col-md-6 mb-4 pb-2">
+
+                    <div class="form-outline">
+                    <label for="">Name</label>
+                            <input type="text" name="oname" id="oname" class="form-control" placeholder="sample pharmacy owner" aria-describedby="helpId">
+                            <small id="helpId" class="text-muted"></small>
+                          
+                    </div>
+
+                  </div>
+                  <div class="col-md-6 mb-4 pb-2">
+
+                    <div class="form-outline">
+                        <label for="">Address</label>
+                        <input type="text" name="oaddress" id="oaddress" class="form-control" placeholder="sample pharmacy address " aria-describedby="helpId">
+                        <small id="helpId" class="text-muted"></small>
+                         
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+
+                      <div class="form-outline">
+                      <label for="">Owner Phone Number</label>
+                              <input type="number" name="onumber" id="onumber" class="form-control" placeholder="sample pharmacy owner" aria-describedby="helpId">
+                              <small id="helpId" class="text-muted"></small>
+                            
+                      </div>
+
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+
+                      <div class="form-outline">
+                      <label for="">Owner Email</label>
+                              <input type="text" name="oemail" id="oemail" class="form-control" placeholder="owner@sample.com" aria-describedby="helpId">
+                              <small id="helpId" class="text-muted"></small>
+                           
+                      </div>
+
+                    </div>
+                  </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-4 pb-2">
+
+                <div class="form-outline">
+                <label for="">Owner NIC</label>
+                        <input type="number" name="onic" id="onic" class="form-control" placeholder="790029871V" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted"></small>
+                      
+                </div>
+              </div>
+            </div>
+                
+
+
+                <button type="submit" name="add" id="add" class="btn btn-info"
+                  data-mdb-ripple-color="dark">Save</button>
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+</body>
+</html>
+
+
+
+
+
