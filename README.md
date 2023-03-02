@@ -5,10 +5,10 @@ Duothan competition official repository by team Script Kiddies
 - Team Script_Kiddies (Team 02)
 - General Sir John Kotelawala Defence University
 
- [Manith Marapperuma](https://github.com/Manithj)
- [Ramith Gunawardana](https://github.com/Ramith-Gunawardana)
- [Dinithi Amarasinghe](https://github.com/DinaKaush)
- [Gayashani Divyanjalee](https://github.com/Gayashani00)
+ [Manith Marapperuma](https://github.com/Manithj)<br>
+ [Ramith Gunawardana](https://github.com/Ramith-Gunawardana)<br>
+ [Dinithi Amarasinghe](https://github.com/DinaKaush)<br>
+ [Gayashani Divyanjalee](https://github.com/Gayashani00)<br>
 
 - Repos link: https://github.com/Manithj/Duothan_Script_Kiddies
 - Submission Technology Stacks/Frameworks: @BootStrap @MySQL
